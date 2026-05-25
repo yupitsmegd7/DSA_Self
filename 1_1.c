@@ -28,6 +28,15 @@ else{
 		printf("%d ",a[i]);	
 	}
 	}
-
+	
+// TC=O(n)
+	
 return 0;
 }
+
+/*
+	The best practice for this kinda array (without sorting) is that:
+	We change the a[n]=a[req_pos]&
+	              a[req_pos]=req
+	TC=O(1)
+*/
