@@ -12,6 +12,10 @@ if (n>=10){
 else{
 	printf("Enter insertion index and message");
 	scanf("%d %d",&c,&s);
+	if (c<0||c>n){
+	printf("Invalid placement");
+	return 0;
+	}
 	for (int i=0;i<n;i++){
 		scanf("%d",&a[i]);	
 		}
