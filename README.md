@@ -1,311 +1,324 @@
-# DSA Self — Data Structures & Algorithms in C
+# DSA Self
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c" />
-  <img src="https://img.shields.io/badge/DSA-Learning-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Actively%20Learning-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-</p>
+<div align="center">
 
-<p align="center">
-  A growing collection of <b>Data Structures and Algorithms implemented from scratch in C</b>.
-</p>
+### Data Structures & Algorithms — built from scratch in C
+
+A hands-on repository for learning **memory, pointers, structures, arrays, matrices, linked lists, stacks, queues, and core DSA operations** by implementing them directly in C.
+
+<br>
+
+![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![DSA](https://img.shields.io/badge/Focus-Data%20Structures%20%26%20Algorithms-F97316?style=for-the-badge)
+![Learning](https://img.shields.io/badge/Status-Actively%20Learning-22C55E?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-FACC15?style=for-the-badge)
+
+</div>
 
 ---
 
 ## About
 
-**DSA Self** is my personal repository for learning, implementing and experimenting with fundamental concepts in **Data Structures and Algorithms using C**.
+**DSA Self** is my personal Data Structures and Algorithms practice repository.
 
-Rather than relying only on library implementations, the goal is to understand how data structures actually work internally — including memory allocation, traversal, insertion, deletion and algorithmic operations.
+The goal is not just to obtain the correct output, but to understand what happens underneath it:
 
-This repository will continue evolving as I move from fundamental C concepts toward more advanced DSA topics and problem solving.
+- how memory is allocated,
+- how pointers connect data,
+- how arrays are resized,
+- how linked structures are traversed,
+- how sparse data can be represented efficiently,
+- how elementary data structures behave internally, and
+- how an implementation can be improved through debugging and iteration.
 
----
-
-## Concepts Covered
-
-### C Programming Fundamentals
-- Functions
-- Pointers
-- Call by value
-- Call by address
-- Structures
-- Arrays of structures
-- Dynamic memory allocation
-- `malloc()`
-- `realloc()`
-- Pointer arithmetic
-
-### Arrays
-- Array traversal
-- Element insertion
-- Element deletion
-- Linear search
-- Dynamic arrays
-
-### Matrices
-- Matrix traversal
-- Non-zero element detection
-- Upper triangular matrices
-- Main diagonal operations
-- Sparse matrix representation
-
-### Sparse Matrices
-- 3-Tuple representation
-- Sparse matrix conversion
-- Sparse matrix transpose
-
-### Linked Lists
-- Node creation
-- Dynamic node allocation
-- Singly linked list creation
-- Linked list traversal
-- Node insertion
-
-### Stack & Queue
-- Stack implementation using arrays
-- Queue implementation using arrays
-- Push / Pop
-- Enqueue / Dequeue
-- Overflow / Underflow handling
-- Palindrome checking using Stack + Queue
+The repository is intentionally incremental. Earlier files represent smaller building blocks, while later programs combine multiple ideas into larger menu-driven implementations.
 
 ---
 
-## Repository Structure
-
-| File | Concept |
-|------|---------|
-| `1_1.c` | Array insertion using traversal |
-| `1_2.c` | Number comparison using functions |
-| `1_3.c` | Employee records using array of structures |
-| `1_4.c` | Complex number operations using structures |
-| `1_5.c` | Dynamic array insertion, deletion, search and traversal |
-| `1_6.c` | Square matrix operations |
-| `1_7.c` | Sparse matrix representation using 3-tuple format |
-| `1_8.c` | Sparse matrix transpose |
-| `2_1.c` | Basic linked-list node creation |
-| `2_2.c` | Creating and traversing a singly linked list |
-| `2_3.c` | Linked-list insertion practice |
-| `3_1.c` | Dynamic structure allocation for student records |
-| `Palindrom_using_stack_and_queue.c` | Palindrome detection using Stack and Queue |
-
----
-
-## Example — Dynamic Array Operations
-
-The repository includes menu-driven programs that perform operations such as:
+## Current Coverage
 
 ```text
-*** MENU ***
+C fundamentals
+├── Functions
+├── Pointers
+├── Structures
+├── Call by value / address
+└── Dynamic memory allocation
 
-1. Insert
-2. Delete
-3. Linear Search
-4. Traverse
-5. Exit
+Linear structures
+├── Arrays
+├── Dynamic arrays
+├── Singly linked lists
+├── Stacks
+└── Queues
+
+Matrix-based problems
+├── Matrix operations
+├── Sparse matrices
+├── 3-tuple representation
+├── Sparse transpose
+└── Sparse addition
+
+Applications
+├── Employee records
+├── Student records
+├── Complex-number operations
+├── Polynomial addition
+└── Palindrome detection
 ```
 
-The array implementation uses dynamic memory allocation:
+---
+
+## Repository Map
+
+| File | Implementation / Concept |
+| --- | --- |
+| [`1_1.c`](./1_1.c) | Array insertion at a position using traversal and element shifting |
+| [`1_2.c`](./1_2.c) | Comparing two numbers through a function |
+| [`1_3.c`](./1_3.c) | Employee records using an array of structures and gross-salary calculation |
+| [`1_4.c`](./1_4.c) | Complex-number addition and multiplication using structures |
+| [`1_5.c`](./1_5.c) | Dynamic array with insertion, deletion, linear search, and traversal |
+| [`1_6.c`](./1_6.c) | Square-matrix operations: non-zero count, upper triangle, and adjacent diagonals |
+| [`1_7.c`](./1_7.c) | Sparse-matrix representation using 3-tuples |
+| [`1_8.c`](./1_8.c) | Transpose of a sparse matrix in 3-tuple representation |
+| [`1_9.c`](./1_9.c) | Addition of two sparse matrices represented as row-column-value tuples |
+| [`1_10.c`](./1_10.c) | Polynomial addition using coefficient arrays |
+| [`2_1.c`](./2_1.c) | Creating a singly linked-list node with dynamic memory allocation |
+| [`2_2.c`](./2_2.c) | Building and traversing a singly linked list |
+| [`2_3.c`](./2_3.c) | Linked-list insertion practice |
+| [`2_4.c`](./2_4.c) | Complete menu-driven singly linked list: insert, delete, count, traverse, search, sort, reverse |
+| [`2_5.c`](./2_5.c) | Polynomial representation and addition using linked lists |
+| [`3_1.c`](./3_1.c) | Dynamically allocated student records with marks, name, and ID |
+| [`Palindrom_using_stack_and_queue.c`](./Palindrom_using_stack_and_queue.c) | Palindrome checking with a stack and queue |
+
+---
+
+## Concept Progression
+
+The files roughly follow a progression from basic C programming toward data-structure implementation.
+
+### 1. Arrays and memory
+
+The repository begins with direct array manipulation before moving to dynamically allocated arrays.
+
+A typical dynamic allocation pattern used in the exercises is:
 
 ```c
 int *a = malloc(n * sizeof(int));
 ```
 
-and allows the array to grow dynamically using:
+and resizing is explored with:
 
 ```c
 *a = realloc(*a, (*n + 1) * sizeof(int));
 ```
 
-This helps demonstrate how dynamic arrays work internally.
+This makes insertion and deletion exercises useful for understanding both **index manipulation** and **memory management**.
 
----
+### 2. Structures
 
-## Sparse Matrix Representation
+Structures are used to model more meaningful records and objects, including:
 
-Sparse matrices are represented using the **3-Tuple representation**:
+- employee information,
+- complex numbers, and
+- student records.
+
+These exercises introduce member access, arrays of structures, structure pointers, and dynamic allocation.
+
+### 3. Matrices and sparse matrices
+
+Matrix exercises move from ordinary two-dimensional arrays to **sparse representations**.
+
+Instead of storing every zero, a sparse matrix can store only:
 
 ```text
-Row   Column   Value
+row   column   value
 ```
 
-Instead of storing every zero in a matrix, only non-zero values and their positions are stored.
+That idea is then extended to:
 
-Example:
+- sparse-matrix conversion,
+- transpose, and
+- addition.
+
+### 4. Linked lists
+
+The linked-list exercises build up progressively:
 
 ```text
-0 0 5
-0 3 8
-2 1 7
+Create one node
+      ↓
+Build multiple nodes
+      ↓
+Traverse the list
+      ↓
+Insert nodes
+      ↓
+Menu-driven list operations
+      ↓
+Use linked lists to represent polynomials
 ```
 
-This provides a more memory-efficient representation for matrices containing mostly zero values.
+The larger singly linked-list implementation includes:
 
----
+- insertion,
+- deletion,
+- counting,
+- traversal,
+- searching,
+- sorting, and
+- reversal.
 
-## Stack + Queue Palindrome Detection
+### 5. Stack and queue applications
 
-One experiment in this repository checks whether a string is a palindrome using both a **Stack** and a **Queue**.
+The palindrome exercise demonstrates how different data-access rules can solve the same problem:
 
 ```text
 Input
-  │
-  ├────► Stack ───► LIFO
-  │
-  └────► Queue ───► FIFO
-                 │
-                 ▼
-              Compare
+ ├────► Stack ──► LIFO ──┐
+ │                        ├──► Compare
+ └────► Queue ──► FIFO ──┘
 ```
 
-Because a stack reverses the order while a queue preserves it, comparing their outputs can determine whether the sequence is a palindrome.
+The stack reverses access order while the queue preserves it.
 
 ---
 
 ## How to Run
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/yupitsmegd7/DSA_Self.git
-```
-
-### 2. Enter the directory
-
-```bash
 cd DSA_Self
 ```
 
-### 3. Compile a program
+### Compile any program
 
 Using GCC:
 
 ```bash
-gcc 1_5.c -o program
+gcc 2_4.c -o program
 ```
 
-### 4. Run it
+### Run
 
-#### Windows
+**Windows**
 
 ```bash
 program.exe
 ```
 
-#### Linux / macOS
+**Linux / macOS**
 
 ```bash
 ./program
 ```
 
----
-
-## Current Learning Progress
-
-```text
-C Fundamentals             ███████████████░░░░░
-Arrays                     ████████████████░░░░
-Matrices                   ██████████████░░░░░░
-Sparse Matrices            █████████████░░░░░░░
-Linked Lists               █████████░░░░░░░░░░░
-Stacks & Queues             ████████░░░░░░░░░░░
-Trees                       ░░░░░░░░░░░░░░░░░░░░
-Graphs                      ░░░░░░░░░░░░░░░░░░░░
-Searching & Sorting         ░░░░░░░░░░░░░░░░░░░░
-Dynamic Programming         ░░░░░░░░░░░░░░░░░░░░
-```
+To experiment with another exercise, simply replace `2_4.c` with the desired filename.
 
 ---
 
-## Planned Topics
+## Skills Practised
 
-The repository will gradually include implementations of:
+| Area | Topics |
+| --- | --- |
+| **C fundamentals** | functions, loops, conditions, arrays |
+| **Memory** | `malloc()`, `realloc()`, `free()` |
+| **Pointers** | pointer traversal, structure pointers, dynamic nodes |
+| **Structures** | custom data types, arrays of structures |
+| **Arrays** | insertion, deletion, traversal, linear search |
+| **Matrices** | matrix traversal, diagonals, triangular matrices |
+| **Sparse matrices** | 3-tuple representation, transpose, addition |
+| **Linked lists** | creation, insertion, deletion, search, sort, reverse |
+| **Stacks / queues** | LIFO, FIFO, overflow/underflow concepts |
+| **Problem modelling** | complex numbers, polynomials, records, palindrome checking |
+
+---
+
+## Learning Roadmap
+
+### Implemented / currently practised
 
 - [x] Arrays
 - [x] Structures
 - [x] Dynamic memory allocation
 - [x] Matrix operations
-- [x] Sparse matrices
-- [x] Linked-list basics
-- [x] Stack basics
-- [x] Queue basics
-- [ ] Complete singly linked list
-- [ ] Doubly linked list
-- [ ] Circular linked list
-- [ ] Stack using linked list
-- [ ] Queue using linked list
+- [x] Sparse-matrix representation
+- [x] Sparse-matrix transpose
+- [x] Sparse-matrix addition
+- [x] Polynomial addition with arrays
+- [x] Singly linked-list fundamentals
+- [x] Linked-list insertion and deletion
+- [x] Linked-list searching and traversal
+- [x] Linked-list sorting and reversal
+- [x] Polynomial addition using linked lists
+- [x] Stack fundamentals
+- [x] Queue fundamentals
+- [x] Stack + queue application
+
+### Next major DSA areas
+
+- [ ] Doubly linked lists
+- [ ] Circular linked lists
+- [ ] Stack using linked lists
+- [ ] Queue using linked lists
 - [ ] Circular queue
 - [ ] Priority queue
-- [ ] Binary trees
-- [ ] Binary search trees
-- [ ] Heap
-- [ ] Hash tables
-- [ ] Graphs
-- [ ] BFS
-- [ ] DFS
 - [ ] Recursion
 - [ ] Searching algorithms
 - [ ] Sorting algorithms
+- [ ] Trees
+- [ ] Binary search trees
+- [ ] Heaps
+- [ ] Hash tables
+- [ ] Graphs
+- [ ] BFS / DFS
 - [ ] Greedy algorithms
 - [ ] Dynamic programming
 
 ---
 
-## Goals of This Repository
+## Repository Philosophy
 
-The primary goals are to:
+> **Understand → Implement → Break → Debug → Improve**
 
-1. Build strong fundamentals in Data Structures and Algorithms.
-2. Understand memory management in C.
-3. Implement data structures manually.
-4. Analyse time and space complexity.
-5. Improve problem-solving ability.
-6. Build a strong base for competitive programming and software engineering.
-7. Maintain a record of my DSA learning journey.
+This repository is a learning log, so implementations may evolve as new concepts are learned.
 
----
+The emphasis is on building intuition for:
 
-## Development Philosophy
-
-The repository focuses on:
-
-> **Understand → Implement → Debug → Optimise → Repeat**
-
-Some programs are intentionally kept close to their original learning implementations so that progress can be tracked over time.
-
-As my understanding improves, implementations may be rewritten with better memory management, modularity and algorithmic efficiency.
+1. **how the data is stored,**
+2. **how it moves through memory,**
+3. **how each operation changes the structure,** and
+4. **what the time and space cost of that operation is.**
 
 ---
 
-## Tech Stack
+## Tech
 
 <p>
-  <img src="https://skillicons.dev/icons?i=c,gcc,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=c,gcc,git,github,vscode" alt="C, GCC, Git, GitHub and VS Code" />
 </p>
 
 - **Language:** C
 - **Compiler:** GCC
-- **Version Control:** Git
-- **Repository Hosting:** GitHub
+- **Version control:** Git
+- **Repository hosting:** GitHub
 - **Editor:** VS Code
 
 ---
 
 ## Contributing
 
-This is primarily a personal learning repository, but suggestions and improvements are welcome.
+This is primarily a personal learning repository, but constructive suggestions are welcome.
 
-If you notice:
+Useful contributions include:
 
-- a better algorithm,
-- an optimization,
-- a bug,
-- an edge case,
-- or a cleaner implementation,
-
-feel free to open an issue or submit a pull request.
+- identifying edge cases,
+- fixing memory-management problems,
+- suggesting cleaner implementations,
+- improving time or space complexity, and
+- explaining alternative approaches.
 
 ---
 
@@ -313,9 +326,9 @@ feel free to open an issue or submit a pull request.
 
 ### Gourav Dutta
 
-Computer Science student exploring:
+Computer Science student building foundations in:
 
-`Data Structures` • `Algorithms` • `Machine Learning` • `Software Development`
+**Data Structures • Algorithms • Machine Learning • Software Development**
 
 GitHub: [@yupitsmegd7](https://github.com/yupitsmegd7)
 
@@ -323,16 +336,16 @@ GitHub: [@yupitsmegd7](https://github.com/yupitsmegd7)
 
 ## License
 
-This project is licensed under the **MIT License**.
+This repository is licensed under the **MIT License**.
 
-See [`LICENSE`](LICENSE) for more information.
+See [`LICENSE`](./LICENSE) for details.
 
 ---
 
-<p align="center">
-  <b>Learning DSA one implementation at a time.</b>
-</p>
+<div align="center">
 
-<p align="center">
-  ⭐ If you find this repository useful, consider giving it a star.
-</p>
+### Learning DSA one implementation at a time.
+
+⭐ If this repository helps you learn something, consider starring it.
+
+</div>
