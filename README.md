@@ -236,6 +236,25 @@ To experiment with another exercise, simply replace `2_4.c` with the desired fil
 
 ---
 
+## DSA Learning Progress
+
+```text
+C Fundamentals             ███████████████░░░░░  75%
+Arrays                     ████████████████░░░░  80%
+Matrices                   ██████████████░░░░░░  70%
+Sparse Matrices            ███████████████░░░░░  75%
+Linked Lists               ██████████████░░░░░░  70%
+Stacks & Queues            ████████░░░░░░░░░░░░  40%
+Trees                      ░░░░░░░░░░░░░░░░░░░░   0%
+Graphs                     ░░░░░░░░░░░░░░░░░░░░   0%
+Searching & Sorting        ░░░░░░░░░░░░░░░░░░░░   0%
+Dynamic Programming        ░░░░░░░░░░░░░░░░░░░░   0%
+```
+
+> Progress reflects the topics currently implemented and practised in this repository and will evolve as new exercises are added.
+
+---
+
 ## Learning Roadmap
 
 ### Implemented / currently practised
